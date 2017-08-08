@@ -20,6 +20,8 @@ enum Words : String{
     case resultIs = "Result is"
 
     case listening = "Listening..."
+    
+    case notValidExpression = "The sentence was not valid expression"
 
 
 }

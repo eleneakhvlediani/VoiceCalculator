@@ -18,12 +18,16 @@ class Calculator {
         
     }
     
-    func calculate(arr:[String])->Double{
-        var res = getResultArray(arr: arr)
-        if res.count > 0 , let resultValue = Double(res[0]){
+    func calculate(arr:[String])->Double?{
+        
+        if arr.count%2 == 0 {
+            return nil
+        }
+        let res = getResultArray(arr: arr)
+        if let result = res , result.count > 0 , let resultValue = Double(result[0]){
             return resultValue
         }
-        return 0
+        return nil
         
     }
     
@@ -48,7 +52,7 @@ class Calculator {
         
     }
     
-    private func getResultArray(arr:[String]) -> [String] {
+    private func getResultArray(arr:[String]) -> [String]? {
         var arrayCopy = arr
         var index = arrayCopy.index{$0 == "×" || $0 == "/" }
         if index == nil {
@@ -62,14 +66,17 @@ class Calculator {
         let operation = arrayCopy.remove(at: index! - 1)
         let secondInt = arrayCopy.remove(at: index! - 1)
         let result = getValue(first: firstInt, second: secondInt, operation: operation)
-        arrayCopy.insert(result, at: index! - 1)
+        if result == nil {
+            return nil
+        }
+        arrayCopy.insert(result!, at: index! - 1)
         return getResultArray(arr: arrayCopy)
         
     }
     
-    private func getValue(first:String,second:String, operation:String) -> String {
+    private func getValue(first:String,second:String, operation:String) -> String? {
 
-        var result:Double = 0
+        var result:Double?
 
         if let firstNumber  = first.doubleValue, let secondNumber = second.doubleValue {
 
@@ -84,11 +91,11 @@ class Calculator {
                     result = firstNumber / secondNumber
 
                 default:
-                    result = 0
+                    return nil
                 }
             }
         
-        return result.description
+        return result?.description
         
     }
 }

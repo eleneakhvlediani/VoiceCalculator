@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VoiceCalculator/Calculator.swift"
-            timestampString = "523907731.504685"
+            timestampString = "523913245.520624"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "getResultArray(arr:)"
             landmarkType = "7">
             <Locations>
@@ -22,11 +22,11 @@
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "VoiceCalculator.Calculator.(getResultArray in _269150F058F32AD5592FD950386A7CCA) (arr : Swift.Array&lt;Swift.String&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
+                  symbolName = "VoiceCalculator.Calculator.(getResultArray in _269150F058F32AD5592FD950386A7CCA) (arr : Swift.Array&lt;Swift.String&gt;) -&gt; Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;"
                   moduleName = "VoiceCalculator"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Elene/Documents/GitHub/VoiceCalculator/VoiceCalculator/Calculator.swift"
-                  timestampString = "523908722.117765"
+                  timestampString = "523913079.526484"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "54"
@@ -37,11 +37,11 @@
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "VoiceCalculatorTests.Calculator.(getResultArray in _A02BAA61D0C396006C0ADF81955EE5C7) (arr : Swift.Array&lt;Swift.String&gt;) -&gt; Swift.Array&lt;Swift.String&gt;"
+                  symbolName = "VoiceCalculatorTests.Calculator.(getResultArray in _A02BAA61D0C396006C0ADF81955EE5C7) (arr : Swift.Array&lt;Swift.String&gt;) -&gt; Swift.Optional&lt;Swift.Array&lt;Swift.String&gt;&gt;"
                   moduleName = "VoiceCalculatorTests"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Elene/Documents/GitHub/VoiceCalculator/VoiceCalculator/Calculator.swift"
-                  timestampString = "523908724.453485"
+                  timestampString = "523913082.236268"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "54"
@@ -58,13 +58,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VoiceCalculator/Calculator.swift"
-            timestampString = "523908476.961232"
+            timestampString = "523913245.520624"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "isValid(str:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceCalculator.Calculator.isValid (str : Swift.String) -&gt; Swift.Bool"
+                  moduleName = "VoiceCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Elene/Documents/GitHub/VoiceCalculator/VoiceCalculator/Calculator.swift"
+                  timestampString = "523913365.021157"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceCalculatorTests.Calculator.isValid (str : Swift.String) -&gt; Swift.Bool"
+                  moduleName = "VoiceCalculatorTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Elene/Documents/GitHub/VoiceCalculator/VoiceCalculator/Calculator.swift"
+                  timestampString = "523913368.018104"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -90,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VoiceCalculator/Calculator.swift"
-            timestampString = "523908629.504799"
+            timestampString = "523913245.520624"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "isValid(str:)"
             landmarkType = "7">
             <Locations>
@@ -138,13 +170,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VoiceCalculator/Calculator.swift"
-            timestampString = "523908630.491194"
+            timestampString = "523913245.520624"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "isValid(str:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceCalculator.Calculator.isValid (str : Swift.String) -&gt; Swift.Bool"
+                  moduleName = "VoiceCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Elene/Documents/GitHub/VoiceCalculator/VoiceCalculator/Calculator.swift"
+                  timestampString = "523913365.270826"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "580">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceCalculatorTests.Calculator.isValid (str : Swift.String) -&gt; Swift.Bool"
+                  moduleName = "VoiceCalculatorTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Elene/Documents/GitHub/VoiceCalculator/VoiceCalculator/Calculator.swift"
+                  timestampString = "523913368.023373"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "580">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -154,12 +218,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VoiceCalculator/Calculator.swift"
-            timestampString = "523908949.219669"
+            timestampString = "523913245.520624"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "isValid(str:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceCalculator.Calculator.isValid (str : Swift.String) -&gt; Swift.Bool"
+                  moduleName = "VoiceCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Elene/Documents/GitHub/VoiceCalculator/VoiceCalculator/Calculator.swift"
+                  timestampString = "523913365.296654"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "420">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceCalculatorTests.Calculator.isValid (str : Swift.String) -&gt; Swift.Bool"
+                  moduleName = "VoiceCalculatorTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Elene/Documents/GitHub/VoiceCalculator/VoiceCalculator/Calculator.swift"
+                  timestampString = "523913368.029339"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "420">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VoiceCalculatorTests/VoiceCalculatorTests.swift"
+            timestampString = "523912934.994648"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "testInvalidArrays()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

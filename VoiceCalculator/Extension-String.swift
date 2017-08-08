@@ -54,10 +54,12 @@ extension String {
                 arr.append(numbers.remove(at: 0))
                 return arr
             }
+            if numbers.count == 0 {
+                return arr
+            }
             arr.append(numbers.remove(at: 0))
             arr.append(operations.remove(at: 0).description)
         }
-        return arr
     }
     
     

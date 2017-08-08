@@ -34,7 +34,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     
     @IBAction func didClickListenButton(_ sender: UIButton) {
         if capture?.isRunning == true {
-     
+            
             endRecognizer()
             sender.setTitle(Words.listen.rawValue, for: .normal)
         }else{
@@ -60,17 +60,17 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         capture = AVCaptureSession()
         
         guard let audioDev = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeAudio) else {
-            print("Could not get capture device.")
+            self.resultLabel.text = "Could not get capture device."
             return
         }
         
         guard let audioIn = try? AVCaptureDeviceInput(device: audioDev) else {
-            print("Could not create input device.")
+            self.resultLabel.text = "Could not create input device."
             return
         }
         
         guard true == capture?.canAddInput(audioIn) else {
-            print("Couls not add input device")
+            self.resultLabel.text =  "Couls not add input device"
             return
         }
         
@@ -80,7 +80,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         audioOut.setSampleBufferDelegate(self, queue: DispatchQueue.main)
         
         guard true == capture?.canAddOutput(audioOut) else {
-            print("Could not add audio output")
+            self.resultLabel.text = "Could not add audio output"
             return
         }
         
@@ -101,11 +101,15 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
                     self.startCapture()
                 }
             case .denied:
+                self.resultLabel.text = "Permision is denied"
+                
                 fallthrough
             case .notDetermined:
+                self.resultLabel.text = "Permision status couldn't be determined"
+                
                 fallthrough
             case.restricted:
-                print("User Autorization Issue.")
+                self.resultLabel.text = "User Autorization Issue."
             }
         }
         
@@ -135,11 +139,22 @@ extension ViewController: SFSpeechRecognitionTaskDelegate {
                     let result  = self.calculator.calculate(arr:exressionArray)
                     
                     DispatchQueue.main.async {
-                        self.resultLabel.text = Words.resultIs.rawValue + " " + result.description
+                        if result != nil {
+                            self.resultLabel.text = Words.resultIs.rawValue + " " + result!.description
+                        }else{
+                            self.resultLabel.text = Words.notValidExpression.rawValue
+                        }
                         
                     }
                     return
                 }
+            }else{
+                DispatchQueue.main.async {
+                    
+                    self.resultLabel.text = Words.notValidExpression.rawValue
+                }
+                
+                
             }
         }
         

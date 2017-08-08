@@ -40,7 +40,6 @@ class VoiceCalculatorTests: XCTestCase {
         XCTAssertEqual(res2 , 3)
 
         
-        
         let res3 = calculator.calculate(arr: ["1","+","4", "/","2","-","1"])
         XCTAssertEqual(res3 , 2)
         // This is an example of a functional test case.
@@ -58,7 +57,7 @@ class VoiceCalculatorTests: XCTestCase {
         
         
         let res3 = calculator.calculate(arr: ["1","+","5","×","4","/","2","×","5","+","3","/","9"])
-        XCTAssertEqualWithAccuracy(res3,51.33, accuracy: 0.01)
+        XCTAssertEqualWithAccuracy(res3!,51.33, accuracy: 0.01)
         
     }
     
@@ -67,9 +66,21 @@ class VoiceCalculatorTests: XCTestCase {
         XCTAssertEqual(res , 0.5)
         
         let res2 = calculator.calculate(arr: ["1", "/","3"])
-        XCTAssertEqualWithAccuracy(res2 , 0.33, accuracy: 0.01)
+        XCTAssertEqualWithAccuracy(res2! , 0.33, accuracy: 0.01)
     }
     
+    func testInvalidArrays() {
+        
+        let res = calculator.calculate(arr:  ["1", "/","ee", "+" , "1"])
+        XCTAssertEqual(res,nil)
+        let res2 = calculator.calculate(arr:  ["1", "/","2", "+" ])
+        XCTAssertEqual(res2,nil)
+
+        
+        let res3 = calculator.calculate(arr:  ["1", "/","/", "2" ])
+        XCTAssertEqual(res3,nil)
+     
+    }
     
     func testValidArray() {
 
