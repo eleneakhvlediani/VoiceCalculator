@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3DC18F11F3A3D6E00A801B8 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DC18F01F3A3D6E00A801B8 /* Words.swift */; };
 		B3F06C2E1F39B43A0099E45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F06C2D1F39B43A0099E45F /* AppDelegate.swift */; };
 		B3F06C301F39B43A0099E45F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F06C2F1F39B43A0099E45F /* ViewController.swift */; };
 		B3F06C331F39B43A0099E45F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3F06C311F39B43A0099E45F /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B3DC18F01F3A3D6E00A801B8 /* Words.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
 		B3F06C2A1F39B43A0099E45F /* VoiceCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F06C2D1F39B43A0099E45F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3F06C2F1F39B43A0099E45F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3DC18EF1F3A3D3C00A801B8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B3DC18F01F3A3D6E00A801B8 /* Words.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
 		B3F06C211F39B43A0099E45F = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +112,7 @@
 		B3F06C2C1F39B43A0099E45F /* VoiceCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				B3DC18EF1F3A3D3C00A801B8 /* Constants */,
 				B3F06C621F3A04730099E45F /* Extensions */,
 				B3F06C5E1F39B4BC0099E45F /* Model */,
 				B3F06C5C1F39B4A70099E45F /* StoryBoards */,
@@ -305,6 +316,7 @@
 				B3F06C2E1F39B43A0099E45F /* AppDelegate.swift in Sources */,
 				B3F06C641F3A04880099E45F /* Extension-String.swift in Sources */,
 				B3F06C601F39B4D40099E45F /* Calculator.swift in Sources */,
+				B3DC18F11F3A3D6E00A801B8 /* Words.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

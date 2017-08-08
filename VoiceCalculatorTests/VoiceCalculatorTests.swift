@@ -31,7 +31,7 @@ class VoiceCalculatorTests: XCTestCase {
 
         XCTAssertEqual(calculator.calculate(arr: ["1"]) , 1)
 
-        let arr = ["1","+","5", "*","2"]
+        let arr = ["1","+","5", "×","2"]
         let res = calculator.calculate(arr: arr)
         XCTAssertEqual(res , 11)
 
@@ -48,16 +48,16 @@ class VoiceCalculatorTests: XCTestCase {
     }
     
     func testComplicated(){
-        let arr = ["1","+","5", "*","4", "/" , "2" , "-" , "1"]
+        let arr = ["1","+","5", "×","4", "/" , "2" , "-" , "1"]
         
         let res = calculator.calculate(arr: arr)
         XCTAssertEqual(res,10)
         
-        let res2 = calculator.calculate(arr: ["1","+","5","*","4","/","2","*","5","+","9","/","3"])
+        let res2 = calculator.calculate(arr: ["1","+","5","×","4","/","2","×","5","+","9","/","3"])
         XCTAssertEqual(res2,54)
         
         
-        let res3 = calculator.calculate(arr: ["1","+","5","*","4","/","2","*","5","+","3","/","9"])
+        let res3 = calculator.calculate(arr: ["1","+","5","×","4","/","2","×","5","+","3","/","9"])
         XCTAssertEqualWithAccuracy(res3,51.33, accuracy: 0.01)
         
     }
@@ -72,17 +72,17 @@ class VoiceCalculatorTests: XCTestCase {
     
     
     func testValidArray() {
-        let arr = ["1","+","5", "*","4", "/" , "2" , "-" , "1"]
-        let res = calculator.isValid(arr: arr)
+
+        let res = calculator.isValid(str: "1+5×4/2-1")
         XCTAssertEqual(res,true)
-        let res2 = calculator.isValid(arr: ["1","+","5", "*","4", "/" , "2" , "-"])
+        let res2 = calculator.isValid(str: "1+5×4/")
         XCTAssertEqual(res2,false)
 
     }
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
-            _ = self.calculator.calculate(arr: ["1","+","5","*","4","/","2","*","5","+","3","/","9"])
+            _ = self.calculator.calculate(arr: ["1","+","5","×","4","/","2","×","5","+","3","/","9"])
         }
     }
     

@@ -12,7 +12,7 @@ import Foundation
 extension String {
     public var isOperation:Bool {
         get {
-            return self == "+" || self == "-" || self == "*" || self == "/"
+            return self == "+" || self == "-" || self == "×" || self == "/"
         }
     }
     
@@ -37,6 +37,27 @@ extension String {
         get {
             return self.intValue != nil
         }
+    }
+    
+    public func getExpressionArray()->[String] {
+        
+        var numbers =  self.components(separatedBy: CharacterSet(charactersIn: "+-×/"))
+        
+        var operations = self.characters.filter { (c) -> Bool in
+            
+            return c.description.isOperation
+        }
+        var arr = [String]()
+        
+        while true {
+            if operations.count == 0 {
+                arr.append(numbers.remove(at: 0))
+                return arr
+            }
+            arr.append(numbers.remove(at: 0))
+            arr.append(operations.remove(at: 0).description)
+        }
+        return arr
     }
     
     

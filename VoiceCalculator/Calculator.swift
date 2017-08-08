@@ -27,32 +27,30 @@ class Calculator {
         
     }
     
-    func isValid(arr:[String]) -> Bool {
-        if arr.count%2 == 0 {
+    func isValid(str:String) -> Bool {
+        if str.characters.count%2 == 0 {
             return false
         }
         var i = 0
-        for char in arr {
+        for char in str.characters {
             if i%2 == 0 {
-                if !char.isInt {
+                if !char.description.isInt {
                     return false
                 }
             }else{
-                if !char.isOperation {
+                if !char.description.isOperation {
                     return false
                 }
             }
             i += 1 
         }
-        
-        
         return true
         
     }
     
     private func getResultArray(arr:[String]) -> [String] {
         var arrayCopy = arr
-        var index = arrayCopy.index{$0 == "*" || $0 == "/" }
+        var index = arrayCopy.index{$0 == "×" || $0 == "/" }
         if index == nil {
             index = arrayCopy.index{$0 == "+" || $0 == "-" }
             if index == nil {
@@ -80,7 +78,7 @@ class Calculator {
                     result = firstNumber + secondNumber
                 case "-":
                     result = firstNumber - secondNumber
-                case "*":
+                case "×":
                     result = firstNumber * secondNumber
                 case "/":
                     result = firstNumber / secondNumber

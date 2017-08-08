@@ -3,10 +3,48 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "ViewController.(recordAndRecognizeSpeech() -&gt; ()).(closure #2):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "result.bestTranscription.segments">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.speechRecognitionTask(SFSpeechRecognitionTask, didFinishRecognition : SFSpeechRecognitionResult) -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "t.formattedString">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "Calculator.calculate(arr : [String]) -&gt; Int:Calculator.swift">
          <PersistentStrings>
             <PersistentString
                value = "arr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "String.isInt.getter:Extension-String.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.intValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Calculator.isValid(str : String) -&gt; Bool:Calculator.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "!char.description.isInt">
+            </PersistentString>
+            <PersistentString
+               value = "self == &quot;x&quot;">
+            </PersistentString>
+            <PersistentString
+               value = "char.description">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
