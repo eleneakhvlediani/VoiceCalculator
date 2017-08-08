@@ -39,5 +39,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Your speech will be detected and used to calculate the expresion you say</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Your speech will be detected after you press listen button</string>
 </dict>
 </plist>
