@@ -25,9 +25,9 @@ class VoiceCalculatorTests: XCTestCase {
     
     func testExample() {
         
-        XCTAssertEqual(calculator.calculate(arr: []) , 0)
+        XCTAssertEqual(calculator.calculate(arr: []) , nil)
 
-        XCTAssertEqual(calculator.calculate(arr: [""]) , 0)
+        XCTAssertEqual(calculator.calculate(arr: [""]) , nil)
 
         XCTAssertEqual(calculator.calculate(arr: ["1"]) , 1)
 
@@ -88,6 +88,10 @@ class VoiceCalculatorTests: XCTestCase {
         XCTAssertEqual(res,true)
         let res2 = calculator.isValid(str: "1+5×4/")
         XCTAssertEqual(res2,false)
+        let res3 = calculator.isValid(str: "11+5×4")
+        XCTAssertEqual(res3,true)
+        let res4 = calculator.isValid(str: "11+g×4")
+        XCTAssertEqual(res4,false)
 
     }
     func testPerformanceExample() {

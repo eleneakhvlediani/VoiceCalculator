@@ -32,23 +32,27 @@ class Calculator {
     }
     
     func isValid(str:String) -> Bool {
-        if str.characters.count%2 == 0 {
-            return false
-        }
-        var i = 0
+        
+        var wasInt = false
         for char in str.characters {
-            if i%2 == 0 {
-                if !char.description.isInt {
-                    return false
+            if wasInt {
+                if char.description.isInt {
+                    continue
+                }else{
+                    if char.description.isOperation {
+                        wasInt = false
+                    }
                 }
             }else{
-                if !char.description.isOperation {
+                 if !char.description.isInt {
                     return false
                 }
+                wasInt = true
+
             }
-            i += 1 
         }
-        return true
+        
+        return wasInt
         
     }
     
